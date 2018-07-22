@@ -5,4 +5,7 @@ test java
 this is buld jobs testing
 
 
-now this is automaticlly buld stati
+now this is automaticlly buld stati 
+
+
+done 
