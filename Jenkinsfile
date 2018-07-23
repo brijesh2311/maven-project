@@ -56,7 +56,7 @@ stage('delpoytoprod')
                   { 
                   input 'do you want to processed'
                   }
-                      build 'tomcat-staging'
+                      build 'tomcat-pro'
                   }
                   
                }
