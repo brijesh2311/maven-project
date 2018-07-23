@@ -40,7 +40,8 @@ pipeline {
               }
               
               
-              stage('delpoy'){
+              stage('delpoy')
+              {
                   steps {
                   timeout(2)
                   { 
@@ -49,12 +50,12 @@ pipeline {
                       build 'tomcat-staging'
                   }
                   
-                  }
+               }
 
               }
               
               
-              
+}              
               
               
               
