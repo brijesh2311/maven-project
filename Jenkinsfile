@@ -43,8 +43,8 @@ pipeline {
               stage('delpoy')
               {
                   steps {
-                  
-                      scp **/target/*.war ubuntu@184.72.108.1:/home/ubuntu/tomcat-staging/webapps
+
+                      sh 'scp **/target/*.war ubuntu@184.72.108.1:/home/ubuntu/tomcat-staging/webapps'
                   }
                   
                }
