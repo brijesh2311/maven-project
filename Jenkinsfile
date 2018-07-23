@@ -42,8 +42,15 @@ pipeline {
               
               stage('delpoy'){
                   steps {
-                      echo "this is deploy"
+                  timeout(2)
+                  { 
+                  input 'do you want to processed'
                   }
+                      build 'tomcat-staging'
+                  }
+                  
+                  }
+
               }
               
               
