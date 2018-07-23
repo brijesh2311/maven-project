@@ -43,6 +43,15 @@ pipeline {
               stage('delpoy')
               {
                   steps {
+                      build 'tomcat-staging'
+                  }
+                  
+               }
+
+
+stage('delpoytoprod')
+              {
+                  steps {
                   timeout(2)
                   { 
                   input 'do you want to processed'
@@ -51,7 +60,6 @@ pipeline {
                   }
                   
                }
-
               
               
               
